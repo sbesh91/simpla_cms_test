@@ -1,4 +1,7 @@
-<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/simpla-text/simpla-text.html">
+<link rel="import" href="/bower_components/simpla-img/simpla-img.html">
+<link rel="import" href="/bower_components/simpla-admin/simpla-admin.html" async>
 
 <dom-module id="simpla-cms-test-app">
   <template>
@@ -7,26 +10,23 @@
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+    
+    <h2>Hello [[myName]]!</h2>
+
+    <simpla-text path="/text"></simpla-text>
+
+    <img is="simpla-img" path="/section/img">
   </template>
 
   <script>
-    /**
-     * @customElement
-     * @polymer
-     */
-    class Simpla_cms_testApp extends Polymer.Element {
-      static get is() { return 'simpla-cms-test-app'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'simpla_cms_test-app'
-          }
-        };
+    Polymer({
+      is: 'simpla-cms-test-app',
+      properties: {
+        myName: {
+          type: String,
+          value: 'world'
+        }
       }
-    }
-
-    window.customElements.define(Simpla_cms_testApp.is, Simpla_cms_testApp);
+    });
   </script>
 </dom-module>
