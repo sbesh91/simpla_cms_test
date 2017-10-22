@@ -1,9 +1,10 @@
 {
-  "path": "/header/image.json",
   "type": "Image",
+  "path": "/header/image",
   "data": {
-    
+    "src": "[upload eie78.jpeg]",
+    "alt": ""
   },
   "createdAt": "2017-04-05T17:20:17.440Z",
-  "updatedAt": "2017-04-06T09:31:47.499Z"
+  "updatedAt": "2017-10-22T16:48:58.295Z"
 }
