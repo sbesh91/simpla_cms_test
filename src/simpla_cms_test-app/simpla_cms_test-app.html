@@ -1,6 +1,10 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/simpla-text/simpla-text.html">
 <link rel="import" href="/bower_components/simpla-img/simpla-img.html">
+<link rel="import" href="/bower_components/simpla-admin/simpla-admin.html">
+<link rel="import" href="/bower_components/simpla-admin/simpla-admin-controls.html">
+<link rel="import" href="/bower_components/simpla-login/simpla-login.html">
+<link rel="import" href="/bower_components/simpla-notify/simpla-notify.html">
 
 <dom-module id="simpla-cms-test-app">
   <template>
@@ -12,7 +16,7 @@
         width:100%;
       }
     </style>
-    
+    <simpla-admin></simpla-admin>
     <h2>Hello [[myName]]!</h2>
 
     <simpla-text path="/header/text"></simpla-text>
