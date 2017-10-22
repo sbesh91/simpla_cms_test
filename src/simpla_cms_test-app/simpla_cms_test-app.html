@@ -1,7 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/simpla-text/simpla-text.html">
 <link rel="import" href="/bower_components/simpla-img/simpla-img.html">
-<link rel="import" href="/bower_components/simpla-admin/simpla-admin.html" async>
 
 <dom-module id="simpla-cms-test-app">
   <template>
@@ -9,13 +8,16 @@
       :host {
         display: block;
       }
+      img{
+        width:100%;
+      }
     </style>
     
     <h2>Hello [[myName]]!</h2>
 
-    <simpla-text></simpla-text>
+    <simpla-text path="/header/text"></simpla-text>
 
-    <img is="simpla-img">
+    <img is="simpla-img" path="/header/image">
   </template>
 
   <script>
