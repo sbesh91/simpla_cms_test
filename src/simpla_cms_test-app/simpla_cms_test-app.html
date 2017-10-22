@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="simpla_cms_test-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class Simpla_cms_testApp extends Polymer.Element {
+      static get is() { return 'simpla_cms_test-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'simpla_cms_test-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Simpla_cms_testApp.is, Simpla_cms_testApp);
+  </script>
+</dom-module>

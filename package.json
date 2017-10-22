@@ -1,0 +1,27 @@
+{
+  "name": "simpla_cms_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "bower install && polymer build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbesh91/simpla_cms_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbesh91/simpla_cms_test/issues"
+  },
+  "homepage": "https://github.com/sbesh91/simpla_cms_test#readme",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "polymer-cli": "^1.5.7"
+  }
+}

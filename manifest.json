@@ -1,0 +1,6 @@
+{
+  "name": "simpla_cms_test",
+  "short_name": "simpla_cms_test",
+  "start_url": "/",
+  "display": "standalone"
+}
