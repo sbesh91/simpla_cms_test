@@ -1,9 +1,9 @@
 {
-  "path": "/header/text.json",
   "type": "Text",
+  "path": "/header/text",
   "data": {
-    
+    "text": "<p>save this text</p>"
   },
   "createdAt": "2017-04-05T17:20:17.440Z",
-  "updatedAt": "2017-04-06T09:31:47.499Z"
+  "updatedAt": "2017-10-22T16:49:05.694Z"
 }
