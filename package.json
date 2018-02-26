@@ -3,25 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "bower install && polymer build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sbesh91/simpla_cms_test.git"
+    "start:dev": "webpack-dev-server -d --hot --watch",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sbesh91/simpla_cms_test/issues"
-  },
-  "homepage": "https://github.com/sbesh91/simpla_cms_test#readme",
   "dependencies": {
-    "bower": "^1.8.2",
-    "polymer-cli": "^1.5.7"
+    "@webcomponents/webcomponentsjs": "^1.1.0",
+    "lit-html": "^0.9.0",
+    "simpla": "^3.0.1",
+    "web-animations-js": "^2.3.1"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.0.0"
   }
 }
