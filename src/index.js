@@ -1,12 +1,10 @@
 import { html, render } from 'lit-html';
 import loader from '@webcomponents/webcomponentsjs';
 import 'web-animations-js/web-animations-next.min.js';
-// Import Simpla and OAuth adapter
 import Simpla from 'simpla';
 import SimplaNetlify from 'simpla/adapters/netlify';
 
 
-const body = document.querySelector("#body");
 
 // Init Simpla
 Simpla.init({
@@ -27,10 +25,6 @@ window.Simpla = Simpla;
 
 
 const bodyTemplate = () => html`
-  <link rel="import" href="/bower_components/simpla-text/simpla-text.html">
-  <link rel="import" href="/bower_components/simpla-img/simpla-img.html">
-  <link rel="import" href="/bower_components/simpla-admin/simpla-admin.html" async>
-
   <simpla-admin></simpla-admin>
   
   <simpla-text path="/header/text"></simpla-text>
@@ -38,4 +32,4 @@ const bodyTemplate = () => html`
   <img is="simpla-img" path="/header/image">
 `;
 
-render(bodyTemplate(), body);
+render(bodyTemplate(), document.querySelector('#body'));

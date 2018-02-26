@@ -1,6 +1,7 @@
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PolymerWebpackLoader = require('polymer-webpack-loader');
 const webpack = require("webpack");
 
 module.exports = {
@@ -11,6 +12,14 @@ module.exports = {
     path: path.resolve(__dirname, 'out'),
     filename: './bundle.js'
   },
+  module: {
+    loaders: [
+      {
+        test: /\.html$/,
+        loader: 'polymer-webpack-loader'
+      },
+    ]
+  },
   devtool: 'source-map',
   watch: false,
   plugins: [
@@ -18,7 +27,7 @@ module.exports = {
       sourceMap: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.htm'
     }),
     new webpack.IgnorePlugin(/vertx/)
   ]
