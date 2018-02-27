@@ -33,6 +33,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {from: 'bower_components', to: 'bower_components'},
       {from: 'server', to: ''}, 
+      {from: '_content', to: '_content'}
     ]), 
     new webpack.IgnorePlugin(/vertx/)
   ]
