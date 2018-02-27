@@ -25,6 +25,12 @@ window.Simpla = Simpla;
 
 
 const bodyTemplate = () => html`
+  <style>
+    img {
+      max-width: 100%;
+    }
+  </style>
+
   <simpla-admin></simpla-admin>
   
   <simpla-text path="/header/text"></simpla-text>
