@@ -1,10 +1,10 @@
 {
   "type": "Image",
-  "path": "/header/image",
   "data": {
-    "src": "[upload gmk51.png]",
+    "src": "[upload krb6o.png]",
     "alt": ""
   },
-  "createdAt": "2017-04-05T17:20:17.440Z",
-  "updatedAt": "2017-10-22T23:47:39.042Z"
+  "path": "/header/image",
+  "createdAt": "2018-02-27T00:31:29.828Z",
+  "updatedAt": "2018-02-27T00:31:46.834Z"
 }
