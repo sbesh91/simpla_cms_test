@@ -31,8 +31,8 @@ module.exports = {
       template: './src/index.htm'
     }),
     new CopyWebpackPlugin([
-      {from: 'bower_components', to: 'out/bower_components'},
-      {from: 'server', to: 'out'}, 
+      {from: 'bower_components', to: 'bower_components'},
+      {from: 'server', to: ''}, 
     ]), 
     new webpack.IgnorePlugin(/vertx/)
   ]
